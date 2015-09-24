@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    
+    <LinearLayout
+        android:id="@+id/first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5sp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:layout_margin="5sp"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="技术问答"/>               
+    </LinearLayout>
+    
+     <TextView
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:background="#DDDDDD"
+         android:height="2sp" 
+         />
+     
+      <LinearLayout
+        android:id="@+id/second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5sp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:layout_margin="5sp"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="技术问答"/>               
+    </LinearLayout>
+    
+     <TextView
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:background="#DDDDDD"
+         android:height="2sp" 
+         />
+     
+      <LinearLayout
+        android:id="@+id/third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5sp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:layout_margin="5sp"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="技术问答"/>               
+    </LinearLayout>
+    
+     <TextView
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:background="#DDDDDD"
+         android:height="2sp" 
+         />
+     
+      <LinearLayout
+        android:id="@+id/forth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5sp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:layout_margin="5sp"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="技术问答"/>               
+    </LinearLayout>
+    
+     <TextView
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:background="#DDDDDD"
+         android:height="2sp" 
+         />
+     
+     <LinearLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="0dp"
+         android:layout_weight="1"
+        android:gravity="bottom"
+        android:padding="5dp"
+         >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="技术问答"
+            android:layout_weight="1"
+             android:gravity="center"/> 
+            
+            <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="技术问答"
+            android:layout_weight="1"
+            android:gravity="center"/> 
+         
+         </LinearLayout>
+   
+</LinearLayout>
