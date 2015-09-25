@@ -21,11 +21,11 @@
         android:layout_height="match_parent"
         android:background="#fff"
         android:layout_gravity="start">
-        <ListView
-            android:id="@+id/lv_left_menu"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:divider="@null"
-            android:text="DrawerLayout" />
+       <fragment android:name="com.example.myfirstapp.LeftToolBarFragment"
+           android:id="@+id/viewer"
+         android:layout_weight="1"
+		android:layout_width="0dp"
+		android:layout_height="match_parent" 
+           />
     </LinearLayout>
 </android.support.v4.widget.DrawerLayout>

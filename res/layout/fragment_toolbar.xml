@@ -25,7 +25,7 @@
          android:layout_width="fill_parent"
          android:layout_height="wrap_content"
          android:background="#DDDDDD"
-         android:height="2sp" 
+         android:height="1sp" 
          />
      
       <LinearLayout
@@ -48,7 +48,7 @@
          android:layout_width="fill_parent"
          android:layout_height="wrap_content"
          android:background="#DDDDDD"
-         android:height="2sp" 
+         android:height="1sp" 
          />
      
       <LinearLayout
@@ -71,7 +71,7 @@
          android:layout_width="fill_parent"
          android:layout_height="wrap_content"
          android:background="#DDDDDD"
-         android:height="2sp" 
+         android:height="1sp" 
          />
      
       <LinearLayout
@@ -94,7 +94,7 @@
          android:layout_width="fill_parent"
          android:layout_height="wrap_content"
          android:background="#DDDDDD"
-         android:height="2sp" 
+         android:height="1sp" 
          />
      
      <LinearLayout 

@@ -17,27 +17,25 @@ import android.widget.ListView;
 
 
 public class MainActivity extends ActionBarActivity {
-	 //声明相关变量
+	
     private Toolbar toolbar;
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mDrawerToggle;
-    private ListView lvLeftMenu;
-    private String[] lvs = {"List Item 01", "List Item 02", "List Item 03", "List Item 04"};
-    private ArrayAdapter arrayAdapter;
+  
    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        findViews(); //获取控件
-        //京东RunningMan动画效果，和本次Toolbar无关
+        findViews(); //锟斤拷取锟截硷拷
+        
        
-        toolbar.setTitle("Toolbar");//设置Toolbar标题
-        toolbar.setTitleTextColor(Color.parseColor("#ffffff")); //设置标题颜色
+        toolbar.setTitle("Toolbar");//锟斤拷锟斤拷Toolbar锟斤拷锟斤拷
+        toolbar.setTitleTextColor(Color.parseColor("#ffffff")); //锟斤拷锟矫憋拷锟斤拷锟斤拷色
         setSupportActionBar(toolbar);
-        getSupportActionBar().setHomeButtonEnabled(true); //设置返回键可用
+        getSupportActionBar().setHomeButtonEnabled(true); //锟斤拷锟矫凤拷锟截硷拷锟斤拷锟斤拷
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        //创建返回键，并实现打开关/闭监听
+        
         mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar, R.string.open, R.string.close) {
             @Override
             public void onDrawerOpened(View drawerView) {
@@ -52,14 +50,15 @@ public class MainActivity extends ActionBarActivity {
         };
         mDrawerToggle.syncState();
         mDrawerLayout.setDrawerListener(mDrawerToggle);
-        //设置菜单列表
-        arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, lvs);
-        lvLeftMenu.setAdapter(arrayAdapter);
+      
+        
+        
+      
     }
     private void findViews() {
        
         toolbar = (Toolbar) findViewById(R.id.tl_custom);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.dl_left);
-        lvLeftMenu = (ListView) findViewById(R.id.lv_left_menu);
+      
     }
 }
