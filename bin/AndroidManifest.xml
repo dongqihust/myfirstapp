@@ -5,8 +5,8 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="11"
-        android:targetSdkVersion="21" />
+        android:minSdkVersion="8"
+        android:targetSdkVersion="23" />
 
     <application
         android:allowBackup="true"
@@ -22,6 +22,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
     </application>
+    
+
+<application android:name="com.crash.CrashApplication" >
+  
+</application>  
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>  
+
 
 </manifest>
