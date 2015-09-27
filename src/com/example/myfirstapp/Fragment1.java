@@ -16,8 +16,7 @@ import android.widget.Toast;
 
 public class Fragment1 extends  Fragment{
 
-	private static final String[] TITLE = new String[] { "头条", "房产", "另一面", "女人",  
-            "财经", "数码", "情感", "科技" };  
+	private static final String[] TITLE = new String[] { "头条", "房产", "情感", "科技" };  
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -39,7 +38,7 @@ public class Fragment1 extends  Fragment{
 	              
 	            @Override  
 	            public void onPageSelected(int arg0) {  
-	                Toast.makeText(getContext(), TITLE[arg0], Toast.LENGTH_SHORT).show();  
+	               
 	            }  
 	              
 	            @Override  
