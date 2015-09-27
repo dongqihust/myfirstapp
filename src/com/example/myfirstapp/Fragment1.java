@@ -22,44 +22,42 @@ public class Fragment1 extends  Fragment{
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		
-		//ViewPager的adapter 
+		
+		 View convertView = inflater.inflate(R.layout.fragment_layout1, container, false);
+		 
+			//ViewPager的adapter 
+		   FragmentPagerAdapter adapter = new TabPageIndicatorAdapter(getChildFragmentManager());  
+	        ViewPager pager = (ViewPager)convertView.findViewById(R.id.pager);  
+	        pager.setAdapter(adapter);  
+	  
+	        //实例化TabPageIndicator然后设置ViewPager与之关联  
+	        TabPageIndicator indicator = (TabPageIndicator)convertView.findViewById(R.id.indicator);  
+	        indicator.setViewPager(pager);  
+	          
+	        //如果我们要对ViewPager设置监听，用indicator设置就行了  
+	        indicator.setOnPageChangeListener(new OnPageChangeListener() {  
+	              
+	            @Override  
+	            public void onPageSelected(int arg0) {  
+	                Toast.makeText(getContext(), TITLE[arg0], Toast.LENGTH_SHORT).show();  
+	            }  
+	              
+	            @Override  
+	            public void onPageScrolled(int arg0, float arg1, int arg2) {  
+	                  
+	            }  
+	              
+	            @Override  
+	            public void onPageScrollStateChanged(int arg0) {  
+	                  
+	            }  
+	        });  
 	   
-        return inflater.inflate(R.layout.fragment_layout1, container, false);
+	        return convertView;
 		
 	}
 	
-//	 @Override
-//     public void onActivityCreated(Bundle savedInstanceState) {
-//		  
-//	        FragmentPagerAdapter adapter = new TabPageIndicatorAdapter(getChildFragmentManager());  
-//	        ViewPager pager = (ViewPager)getView().findViewById(R.id.pager);  
-//	        pager.setAdapter(adapter);  
-//	  
-//	        //实例化TabPageIndicator然后设置ViewPager与之关联  
-//	        TabPageIndicator indicator = (TabPageIndicator)getView().findViewById(R.id.indicator);  
-//	        indicator.setViewPager(pager);  
-//	          
-//	        //如果我们要对ViewPager设置监听，用indicator设置就行了  
-//	        indicator.setOnPageChangeListener(new OnPageChangeListener() {  
-//	              
-//	            @Override  
-//	            public void onPageSelected(int arg0) {  
-//	                Toast.makeText(getContext(), TITLE[arg0], Toast.LENGTH_SHORT).show();  
-//	            }  
-//	              
-//	            @Override  
-//	            public void onPageScrolled(int arg0, float arg1, int arg2) {  
-//	                  
-//	            }  
-//	              
-//	            @Override  
-//	            public void onPageScrollStateChanged(int arg0) {  
-//	                  
-//	            }  
-//	        });  
-//	    
-//	 }
-//	
+
 
 	/** 
      * ViewPager适配器 
